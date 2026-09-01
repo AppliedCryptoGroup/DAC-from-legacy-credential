@@ -1,0 +1,36 @@
+# Circom and Node artefacts
+**/node_modules/
+**/build/
+**/build_debug/
+**/build_monolithic/
+**/*_js/
+*.r1cs
+*.wasm
+*.sym
+*.zkey
+*.ptau
+*.vkey.json
+*.pkey.json
+generate_witness.js
+witness_calculator.js
+
+# Rust artefacts
+**/target/
+/coverage/
+/*.profraw
+*.gcda
+*.gcno
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# Signed credential JWTs, re-signed by the `demo` example on each run
+# (random ECDSA nonce), so the compact .jwt files are not committed. The .json
+# definitions next to them are the source of truth.
+examples/fixtures/work_credential.jwt
+examples/fixtures/id_credential.jwt
